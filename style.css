@@ -101,3 +101,7 @@ button:active{
 .hidden{
     display:none;
 }
+.screen{
+    opacity:1;
+    transition:opacity .5s ease;
+}
