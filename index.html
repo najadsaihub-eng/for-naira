@@ -1,58 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>For Naira ❤️</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Naira 💖</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
 
-    <!-- Welcome Screen -->
-    <section id="welcome" class="screen">
+  <div class="container">
 
-        <div class="overlay">
-            <h2>For Naira ❤️</h2>
+    <div class="card">
+      <h1>FOR NAIRA</h1>
+      <p class="sub">A little message from Najad 💌</p>
 
-            <h1>Someone has something special to ask you...</h1>
+      <div class="heart">💖</div>
 
-            <button id="startBtn">Start ❤️</button>
-        </div>
+      <p class="message">
+        Some people don't want you,<br>
+        but want your attention.<br><br>
 
-    </section>
+        Some people don't care about you,<br>
+        but wanna control you.
+      </p>
 
-    <!-- Story Screen -->
-    <section id="story" class="screen hidden">
+      <button onclick="showLove()">Tap Me</button>
+      <p id="output"></p>
+    </div>
 
-        <div class="overlay">
+  </div>
 
-            <h2>Hi Naira ❤️</h2>
-
-            <p id="storyText">
-                Every story begins with a single moment...<br><br>
-
-                I never imagined someone could make my days brighter just by existing. 🤍<br><br>
-
-                And today, I want to tell you something that comes straight from my heart.
-            </p>
-
-            <button id="nextBtn">Continue ➜</button>
-
-        </div>
-
-    </section>
-
-    <script src="script.js"></script>
+  <script>
+    function showLove() {
+      document.getElementById("output").innerText = "Stay strong. Choose yourself always 💫";
+    }
+  </script>
 
 </body>
-
 </html>
