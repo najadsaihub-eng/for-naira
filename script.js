@@ -4,7 +4,7 @@ const story = document.getElementById("story");
 
 startBtn.addEventListener("click", () => {
 
-    welcome.style.display = "none";
-    story.style.display = "flex";
+    welcome.classList.add("hidden");
+    story.classList.remove("hidden");
 
 });
