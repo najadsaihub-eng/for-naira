@@ -1,188 +1,65 @@
-/* Reset */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-/* Body */
-
-body{
-    font-family:'Poppins',sans-serif;
-    overflow:hidden;
+.container {
+  text-align: center;
 }
 
-/* Screens */
-
-.screen{
-    width:100vw;
-    height:100vh;
-
-    background:url("background.png") center center/cover no-repeat;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    position:absolute;
-    top:0;
-    left:0;
-
-    opacity:1;
-    transition:opacity .5s ease;
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(255, 0, 100, 0.2);
+  backdrop-filter: blur(10px);
 }
 
-.hidden{
-    display:none;
+h1 {
+  color: #ff4d88;
+  margin-bottom: 5px;
 }
 
-/* Glass Card */
-
-.overlay{
-
-    width:90%;
-    max-width:520px;
-
-    padding:40px;
-
-    border-radius:28px;
-
-    text-align:center;
-
-    background:rgba(255,255,255,.28);
-
-    backdrop-filter:blur(14px);
-    -webkit-backdrop-filter:blur(14px);
-
-    box-shadow:0 10px 35px rgba(0,0,0,.18);
-
+.sub {
+  font-size: 12px;
+  opacity: 0.8;
 }
 
-/* Heading */
-
-h2{
-
-    color:#ff4d88;
-
-    font-size:30px;
-
-    margin-bottom:18px;
-
+.heart {
+  font-size: 40px;
+  margin: 15px 0;
 }
 
-/* Main Title */
-
-h1{
-
-    color:#222;
-
-    font-size:32px;
-
-    font-weight:600;
-
-    line-height:1.4;
-
-    margin-bottom:28px;
-
-    text-shadow:0 1px 2px rgba(255,255,255,.5);
-
+.message {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ddd;
 }
 
-/* Story Text */
-
-#storyText{
-
-    color:#222;
-
-    font-size:21px;
-
-    line-height:1.8;
-
-    margin-bottom:35px;
-
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #ff4d88;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-/* Buttons */
-
-button{
-
-    border:none;
-
-    outline:none;
-
-    cursor:pointer;
-
-    padding:16px 45px;
-
-    font-size:19px;
-
-    font-weight:600;
-
-    color:white;
-
-    background:#ff4d88;
-
-    border-radius:50px;
-
-    transition:.3s;
-
-    box-shadow:0 0 18px rgba(255,77,136,.35);
-
+button:hover {
+  background: #ff1f6d;
 }
 
-/* Hover */
-
-button:hover{
-
-    transform:scale(1.08);
-
-}
-
-/* Click */
-
-button:active{
-
-    transform:scale(.96);
-
-}
-
-/* Mobile */
-
-@media(max-width:600px){
-
-    .overlay{
-
-        width:92%;
-
-        padding:30px;
-
-    }
-
-    h1{
-
-        font-size:25px;
-
-    }
-
-    h2{
-
-        font-size:24px;
-
-    }
-
-    #storyText{
-
-        font-size:18px;
-
-    }
-
-    button{
-
-        font-size:18px;
-
-        padding:15px 36px;
-
-    }
-
+#output {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #ffb3c7;
 }
